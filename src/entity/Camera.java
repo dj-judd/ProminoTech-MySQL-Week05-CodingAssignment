@@ -26,8 +26,6 @@ public class Camera {
 		return new ArrayList<>(cameraList);
 	}
 	
-	
-	
 	public String getName() {
 		return name;
 	}
@@ -43,8 +41,6 @@ public class Camera {
 	}
 	
 	public static int compare(Camera c1, Camera c2) {
-
-		
 		int stringLength1 = c1.getName().length();
         int stringLength2 = c2.getName().length();
 		int lengthMin = Math.min(stringLength1, stringLength2);

@@ -1,16 +1,13 @@
 package app;
 
-
-import java.util.ArrayList;
 import java.util.List;
-
 import entity.Camera;
 
 public class LambdaSorting {
 
 	public static void main(String[] args) {
 
-		System.out.println("There are " + Camera.getCameras().size() + " cameras in the list.");
+		System.out.println("There are " + Camera.getCameras().size() + " cameras in the list:");
 		//Initial Order -- Lambda for Printing
 		Camera.getCameras().forEach((s) -> System.out.println(s.toString(s)));
 
@@ -22,7 +19,7 @@ public class LambdaSorting {
 
 		
 		List<Camera> methodReferenceCameras = sortByMethodReference();
-		System.out.println("\nAfter sorting by Name with Method Reference");
+		System.out.println("\nAfter sorting by Name with Method Reference:");
 		methodReferenceCameras.forEach((s) -> System.out.println(s.toString(s)));
 		//Sorting with Method Reference & Method Reference for printing
 		
