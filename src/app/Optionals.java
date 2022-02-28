@@ -10,8 +10,6 @@ public class Optionals {
 	public static void main(String[] args) {
 
 		new Optionals().methodB();
-	
-	
 	}
 	
 	private void methodB() {
@@ -23,7 +21,6 @@ public class Optionals {
 		} catch (NoSuchElementException e) {
 			System.out.println(e.getMessage());
 		}
-		
 	}
 	
 	private Camera methodA(Optional<Camera> optionalCamera) {

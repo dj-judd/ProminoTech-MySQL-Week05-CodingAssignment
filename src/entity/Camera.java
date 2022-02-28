@@ -1,13 +1,30 @@
 package entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Camera {
 	
 	private String name;
-		
+	
+	private static List<Camera> cameraList = List.of(
+		new Camera("Canon"),
+		new Camera("Nikon"),
+		new Camera("Sony"),
+		new Camera("Panasonic"),
+		new Camera("Red"),
+		new Camera("BlackMagic"),
+		new Camera("Sigma")
+	);
+	
+	
 	public Camera(String nameInput){
 		this.name = nameInput;
 	}
 
+	public static List<Camera> getCameras() {
+		return new ArrayList<>(cameraList);
+	}
 	
 	
 	
@@ -25,7 +42,7 @@ public class Camera {
 		return getName.getClass().getSimpleName() + " | " + name;
 	}
 	
-	public int compare(Camera c1, Camera c2) {
+	public static int compare(Camera c1, Camera c2) {
 
 		
 		int stringLength1 = c1.getName().length();

@@ -19,9 +19,6 @@ public class StreamSorting {
 		
 		String streamSorted = cameraList.stream().map(c -> c.getName()).sorted().collect(Collectors.joining(", "));
 		
-		System.out.println("Cameras sorted by name:\n" + streamSorted);
-		
-		
-		
+		System.out.println("Cameras sorted by name:\n" + streamSorted);	
 	}
 }
